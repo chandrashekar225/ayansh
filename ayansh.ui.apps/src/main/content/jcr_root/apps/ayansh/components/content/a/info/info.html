@@ -1,0 +1,32 @@
+<h3>Configure component</h3>
+<p style="color:blue;">Using sightly getting node properties</p>
+<div>
+        <p>${properties.titlename}</p>
+        <p>${properties.description}</p>
+
+
+</div>
+----------------------------------------------------------------------------------------------
+<p style="color:blue;">Using Wcmpojo properties</p>
+<div data-sly-use.obj="com.aem.ayansh.core.info.Info">
+
+${obj.lowerCaseTitle}
+${obj.lowerCaseDescription}
+
+</div>
+=========================================================
+<p style="color:blue;">Using sling models.....</p>
+<div data-sly-use.obj="com.aem.ayansh.core.slingmodels.TestModel">
+
+${obj.titlename}
+${obj.description}
+
+</div>
+
+
+
+
+
+=======================================================================
+
+=========================================================================================

@@ -1,0 +1,7 @@
+ <sly data-sly-include="/libs/wcm/core/components/init/init.jsp"/>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.all @ categories=['header.first']}"/>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.all @ categories=['footer.second']}"/>
+<div data-sly-resource="${'header' @resourceType = 'wcm/foundation/components/parsys'}"></div>
+<div data-sly-resource="${'footer' @resourceType = 'wcm/foundation/components/parsys'}"></div>
