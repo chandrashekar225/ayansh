@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2021-06-17T12:40:19.129+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/ayansh/settings/wcm/templates/editablehomepage"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/ayansh/components/structure/editableStructurecomponent">
+        <root
+            jcr:lastModified="{Date}2021-06-13T22:37:26.869+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <footer
+                jcr:created="{Date}2021-06-12T11:40:12.366+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-12T11:40:12.366+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ayansh/components/content/homepage/footer"/>
+            <header
+                jcr:created="{Date}2021-06-12T11:31:50.767+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-12T11:31:50.767+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ayansh/components/content/homepage/header">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="11"/>
+                    <phone
+                        jcr:primaryType="nt:unstructured"
+                        width="11"/>
+                </cq:responsive>
+            </header>
+            <info
+                jcr:created="{Date}2021-06-15T14:02:18.250+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T14:02:34.932+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ayansh/components/content/a/info"
+                description="CHANDRASHEKAR"
+                titlename="ABC"/>
+            <navigationcomponent
+                jcr:created="{Date}2021-06-17T12:14:35.837+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-17T12:14:35.837+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ayansh/components/content/homepage/navigationcomponent"/>
+            <coruslcomponent
+                jcr:created="{Date}2021-06-17T12:40:19.124+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-17T12:40:19.124+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ayansh/components/content/homepage/coruslcomponent"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}650"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>
